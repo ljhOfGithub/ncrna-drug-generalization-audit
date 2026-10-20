@@ -1,0 +1,35 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{newtxtext}
+\usepackage[hidelinks]{hyperref}
+\signature{Jihao Li\\{}Independent Researcher\\{}Shenzhen, Guangdong, China\\{}\href{mailto:jihao.li@polyu.edu.hk}{jihao.li@polyu.edu.hk}}
+\address{Shenzhen, Guangdong, China}
+\date{20 October 2026}
+
+\begin{document}
+\begin{letter}{Editor\\\textit{Pattern Recognition}}
+\opening{Dear Editor,}
+
+We submit the Original Article entitled ``Drug-Cold Gains Do Not Persist under Scaffold Separation in ncRNA--Drug Prediction'' for consideration in \textit{Pattern Recognition}.
+
+This study examines two conditions that are often conflated in ncRNA--drug association prediction: ranking unseen drug identities under a fixed drug-cold split, and extrapolating to drugs whose Bemis--Murcko scaffolds are absent from training and validation. On the public RAHGL-MDR fixed drug-cold folds, an entity-balanced prior-residual ranker improved drug-macro average precision over a training-only RNA-frequency prior by 0.013580 across three seeds (95\% CI, 0.005139--0.024170; non-decreasing in 5/5 folds). Under a strict scaffold-disjoint protocol, the gain fell to 0.000296 (scaffold-cluster 95\% CI, $-0.007782$--0.008476; non-decreasing in 2/5 folds).
+
+The contribution is a conditional result and an evaluation boundary, not a claim of a universally superior algorithm or cross-protocol state of the art. The fixed drug-cold result supports expansion to unseen drug identities within the evaluated chemical space, whereas the scaffold-disjoint result does not confirm robust transfer to unseen cores. We further compare strict adaptations of LocalGL, a sequence-free sChemNET ablation, and PLMF-MDA on the Mi endpoint, and audit cross-database overlap, a small temporal-drug holdout, and labels supported by distinct PubMed identifiers.
+
+The work fits \textit{Pattern Recognition} because it studies generalization boundaries of representation and ranking systems under distribution shift, uses a common full-candidate endpoint and clustered uncertainty estimates, and supplies an auditable evidence package. Unknown associations are treated as unlabeled candidates rather than experimentally confirmed negatives. Independent adaptations are not presented as reproductions of the original authors' systems.
+
+The requested submission information is as follows:
+
+\begin{enumerate}
+  \item \textbf{State-of-the-art comparison.} We use protocol-matched adaptations and protocol-level comparisons rather than pooling incompatible scores. Five representative works are ncRD-LG (\textit{Pattern Recognition}, 2026), RAHGL-MDR (\textit{International Journal of Molecular Sciences}, 2026), HMVCC (\textit{Expert Systems with Applications}, 2027; online 2026), sChemNET (\textit{Nature Communications}, 2024), and PLMF-MDA (\textit{PLOS Computational Biology}, 2026).
+  \item \textbf{Public datasets.} Main analyses use the Mi resource distributed with ncRD-LG and the public data/folds associated with RAHGL-MDR. Boundary analyses use ncRNADrug, NoncoRNA, and a historical SM2miR snapshot. Third-party raw files are not redistributed.
+  \item \textbf{Validation metrics.} The primary endpoint is average precision over the full ncRNA candidate set for each held-out drug, macro-averaged across drugs. We report paired bootstrap intervals clustered by drug or scaffold, fold-level direction consistency, multiple training seeds, and a second scaffold split where available.
+\end{enumerate}
+
+\textbf{[AUTHOR CONFIRMATION REQUIRED: originality, no simultaneous submission, approval by all authors, competing interests, and funding.]}
+
+The public evidence package is available at \url{https://github.com/ljhOfGithub/ncrna-drug-generalization-audit}, with the frozen version at \url{https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.0}. A permanent archive DOI has not yet been assigned.
+
+\closing{Sincerely,}
+\end{letter}
+\end{document}

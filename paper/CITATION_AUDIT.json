@@ -1,0 +1,117 @@
+{
+  "audit_date": "2026-10-20",
+  "scope": "seven core method references and three directly used data-resource papers",
+  "review_independence": "same-family",
+  "acceptance_status": "provisional",
+  "summary": {
+    "references": 10,
+    "existence_verified": 10,
+    "keep_without_bibliographic_replacement": 3,
+    "fix": 3,
+    "remove_and_replace_composite_record": 1,
+    "post_fix_unresolved_core_entries": 0,
+    "official_journal_reference_count_requirement_verified": false
+  },
+  "entries": [
+    {
+      "id": 1,
+      "key": "xie2026ncrdlg",
+      "doi": "10.1016/j.patcog.2026.113556",
+      "existence": "yes",
+      "context": "supports",
+      "verdict": "keep",
+      "post_fix_status": "kept",
+      "boundary": "pair-level 60/20/20 is the main protocol; drug, ncRNA and scaffold holdouts are future work"
+    },
+    {
+      "id": 2,
+      "key": "elbashir2026rahgl",
+      "doi": "10.3390/ijms27209013",
+      "existence": "yes",
+      "context": "supports",
+      "verdict": "keep",
+      "post_fix_status": "kept",
+      "boundary": "cold entities may still use features and auxiliary biological relations; author code was not independently audited"
+    },
+    {
+      "id": 3,
+      "key": "ma2027hmvcc",
+      "doi": "10.1016/j.eswa.2026.134658",
+      "existence": "yes",
+      "context": "weak_before_fix_supports_after_fix",
+      "verdict": "fix",
+      "post_fix_status": "fixed",
+      "boundary": "ncRNA-drug rather than miRNA-drug; issue year 2027 and online year 2026"
+    },
+    {
+      "id": 4,
+      "key": "sheng2025mgcna",
+      "doi": "10.1371/journal.pcbi.1013703",
+      "existence": "yes",
+      "context": "supports_after_metadata_fix",
+      "verdict": "fix",
+      "post_fix_status": "fixed",
+      "boundary": "the DOI belongs to Nan Sheng et al. and a multi-view GCN, not the previously mixed miRNA-disease entry"
+    },
+    {
+      "id": 5,
+      "key": "sheng2026plmf",
+      "doi": "10.1371/journal.pcbi.1013968",
+      "existence": "yes",
+      "context": "does_not_support_original_lmf_description_supports_replacement",
+      "verdict": "remove_original_composite_and_replace",
+      "post_fix_status": "replaced",
+      "boundary": "PLM, CNN, GCN and cross-modal attention for miRNA-drug resistance/sensitivity; not miRNA-disease matrix factorization"
+    },
+    {
+      "id": 6,
+      "key": "galeano2024schemnet",
+      "doi": "10.1038/s41467-024-49813-w",
+      "existence": "yes",
+      "context": "supports_after_protocol_fix",
+      "verdict": "fix",
+      "post_fix_status": "fixed",
+      "boundary": "fingerprint Tanimoto below 0.6 defines chemical dissimilarity; no Bemis-Murcko scaffold split is reported"
+    },
+    {
+      "id": 7,
+      "key": "wei2023gcfmcl",
+      "doi": "10.1093/bib/bbad247",
+      "existence": "yes",
+      "context": "supports_source_code_claim_only",
+      "verdict": "keep_with_qualification",
+      "post_fix_status": "kept",
+      "boundary": "drug-as-user BPR occurs during representation learning; final classifier uses MLP and BCE; publisher full text not obtained"
+    },
+    {
+      "id": 8,
+      "key": "cao2024ncrnadrug",
+      "doi": "10.1093/nar/gkad1042",
+      "existence": "yes",
+      "context": "supports_data_source_and_overlap_audit",
+      "verdict": "keep",
+      "post_fix_status": "added",
+      "boundary": "official PMC full text checked; used only for database provenance and scope"
+    },
+    {
+      "id": 9,
+      "key": "li2020noncorna",
+      "doi": "10.1186/s13045-020-00849-7",
+      "existence": "yes",
+      "context": "supports_data_source",
+      "verdict": "keep",
+      "post_fix_status": "added",
+      "boundary": "official PMC full text checked; used only for database provenance and curation scope"
+    },
+    {
+      "id": 10,
+      "key": "liu2013sm2mir",
+      "doi": "10.1093/bioinformatics/bts698",
+      "existence": "yes",
+      "context": "supports_historical_snapshot_identity",
+      "verdict": "keep_with_source_qualification",
+      "post_fix_status": "added",
+      "boundary": "PubMed metadata and abstract plus secondary full-text cross-check; OUP full text was blocked by Cloudflare"
+    }
+  ]
+}

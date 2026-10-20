@@ -1,0 +1,53 @@
+{
+  "split_seed": 20261020,
+  "drug_view": "chemberta",
+  "learner": "pairwise",
+  "negative_mining": "uniform",
+  "balanced_bootstrap_95": {
+    "low": 0.0004942492652481867,
+    "median": 0.0037760484214367507,
+    "high": 0.006805005600439804
+  },
+  "balanced_pooled_aupr_delta": 0.0039167212052346745,
+  "full_candidate_macro_ap_delta": 0.0028812197437771414,
+  "full_candidate_bootstrap_95": {
+    "low": 0.001046653451975991,
+    "median": 0.0028519379593525598,
+    "high": 0.004781799568473798
+  },
+  "full_candidate_fold_non_decrease_count": 4,
+  "passed_preregistered_gate": false,
+  "balanced_fold_non_decrease_count": 5,
+  "residual_scales_by_fold": [
+    {
+      "fold": 0,
+      "residual_scale": 0.1,
+      "best_epoch": 11,
+      "validation_macro_ap": 0.15258979646391033
+    },
+    {
+      "fold": 1,
+      "residual_scale": 0.05,
+      "best_epoch": 23,
+      "validation_macro_ap": 0.15607174196516707
+    },
+    {
+      "fold": 2,
+      "residual_scale": 0.5,
+      "best_epoch": 1,
+      "validation_macro_ap": 0.20998117992007972
+    },
+    {
+      "fold": 3,
+      "residual_scale": 0.05,
+      "best_epoch": 32,
+      "validation_macro_ap": 0.1503616054129883
+    },
+    {
+      "fold": 4,
+      "residual_scale": 0.5,
+      "best_epoch": 4,
+      "validation_macro_ap": 0.14089577597385042
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "source_commit": "95ce15ee958038c9a4ac9844f67f571cd8173feb",
+  "split_seed": 20261020,
+  "training_seeds": [
+    20261020,
+    20261021,
+    20261022
+  ],
+  "folds": 5,
+  "max_epochs": 60,
+  "bootstrap_iterations": 20000,
+  "pair_shape": [
+    635,
+    216
+  ],
+  "positive_pair_count": 5379,
+  "active_drug_count": 197,
+  "active_scaffold_group_count": 165,
+  "macro_ap": {
+    "entity_balanced_pairwise_residual": 0.1754354584708641,
+    "pairwise_prior_residual": 0.17457868166350549,
+    "rna_prior_only": 0.17513910342453595
+  },
+  "entity_vs_prior": {
+    "delta": 0.0002963550463281339,
+    "scaffold_bootstrap_95": [
+      -0.007782437703531027,
+      0.0003644303057045639,
+      0.008475967721426622
+    ],
+    "fold_non_decrease_count": 2,
+    "seed_deltas": {
+      "20261020": 0.005338642157954432,
+      "20261021": 0.008217336506695844,
+      "20261022": -0.01266691352566593
+    },
+    "passed": false
+  },
+  "entity_vs_standard_pairwise": {
+    "delta": 0.0008567768073586002,
+    "scaffold_bootstrap_95": [
+      -0.008737995541598634,
+      0.000839362968720367,
+      0.010741853999148204
+    ],
+    "fold_non_decrease_count": 2,
+    "passed": false
+  },
+  "both_gates_passed": false
+}

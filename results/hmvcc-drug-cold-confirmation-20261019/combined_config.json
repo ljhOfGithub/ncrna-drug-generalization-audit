@@ -1,0 +1,63 @@
+{
+  "datasets": [
+    "NoncoRNA",
+    "ncRNADrug"
+  ],
+  "cross_dataset_gate_passed": false,
+  "dataset_results": [
+    {
+      "dataset": "NoncoRNA",
+      "split_protocol": "degree-balanced five-fold drug-cold",
+      "split_seed": 20261019,
+      "folds": 5,
+      "max_epochs": 120,
+      "aligned_rna_count": 5576,
+      "aligned_drug_count": 154,
+      "mapped_positive_count": 7220,
+      "duplicate_positive_rows_removed": 658,
+      "valid_rna_feature_count": 1014,
+      "valid_drug_feature_count": 98,
+      "full_candidate_macro_ap_delta": 0.003579438936879467,
+      "full_candidate_bootstrap_95": {
+        "low": -0.003311051697199257,
+        "median": 0.003323155034652834,
+        "high": 0.011683971665240543
+      },
+      "full_candidate_fold_non_decrease_count": 2,
+      "balanced_pooled_aupr_delta": -0.019862265346165087,
+      "balanced_bootstrap_95": {
+        "low": -0.04070450150112815,
+        "median": -0.019605719570816416,
+        "high": 0.007926587273372334
+      },
+      "dataset_gate_passed": false
+    },
+    {
+      "dataset": "ncRNADrug",
+      "split_protocol": "degree-balanced five-fold drug-cold",
+      "split_seed": 20261019,
+      "folds": 5,
+      "max_epochs": 120,
+      "aligned_rna_count": 12842,
+      "aligned_drug_count": 303,
+      "mapped_positive_count": 22786,
+      "duplicate_positive_rows_removed": 4206,
+      "valid_rna_feature_count": 4768,
+      "valid_drug_feature_count": 255,
+      "full_candidate_macro_ap_delta": 0.007581090681818323,
+      "full_candidate_bootstrap_95": {
+        "low": 0.0018378011693993175,
+        "median": 0.00743225380114973,
+        "high": 0.013747001191183699
+      },
+      "full_candidate_fold_non_decrease_count": 5,
+      "balanced_pooled_aupr_delta": 0.014974286564849781,
+      "balanced_bootstrap_95": {
+        "low": 0.001529130492313219,
+        "median": 0.013393243371728314,
+        "high": 0.019410103302132428
+      },
+      "dataset_gate_passed": true
+    }
+  ]
+}

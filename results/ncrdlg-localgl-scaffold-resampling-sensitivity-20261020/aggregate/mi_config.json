@@ -1,0 +1,47 @@
+{
+  "dataset": "Mi",
+  "split_seed": 20261019,
+  "folds_completed": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 40,
+  "cached_full_candidate_inference": true,
+  "training_graph_mode": "resample_each_epoch",
+  "fixed_prebatched_training": false,
+  "localgl_minus_prior": -0.004231846035438441,
+  "localgl_minus_prior_bootstrap_95": {
+    "low": -0.006849963549657869,
+    "median": -0.004230646204400631,
+    "high": -0.001558993031093357
+  },
+  "localgl_vs_prior_fold_non_decrease": 2,
+  "candidate_minus_localgl": 0.008472680224997678,
+  "candidate_minus_localgl_bootstrap_95": {
+    "low": 0.005320221374883993,
+    "median": 0.008477448552405432,
+    "high": 0.011759093612093728
+  },
+  "candidate_vs_localgl_fold_non_decrease": 5,
+  "candidate_vs_localgl_gate_passed": true,
+  "resampling_sensitivity": {
+    "paired_drug_count": 606,
+    "dynamic_minus_fixed": 0.0007154000244845417,
+    "dynamic_minus_fixed_bootstrap_95": {
+      "low": -0.0010927278637064117,
+      "median": 0.0007047819021973413,
+      "high": 0.0025550617709994405
+    },
+    "fold_delta": {
+      "0": -0.0020515897593443807,
+      "1": -0.0005391456728536271,
+      "2": 0.002213056108720374,
+      "3": 0.000706988709095605,
+      "4": 0.0032064468933898633
+    },
+    "absolute_delta_le_0_005": true
+  }
+}

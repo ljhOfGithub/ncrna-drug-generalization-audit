@@ -1,0 +1,27 @@
+{
+  "dataset_dir": "Dataset",
+  "predictions": "results/chemberta-pairwise-residual-pilot-20261019/mi_oof_predictions.csv",
+  "split_seed": 20261019,
+  "folds": 5,
+  "candidate_model": "prior_preserving_pairwise_residual",
+  "baseline_model": "rna_prior_only",
+  "strata": {
+    "zero": [
+      0,
+      0
+    ],
+    "low_1_2": [
+      1,
+      2
+    ],
+    "mid_3_9": [
+      3,
+      9
+    ],
+    "high_ge_10": [
+      10,
+      null
+    ]
+  },
+  "estimand": "balanced sampled-unlabeled OOF diagnostic; not full-candidate AP"
+}
