@@ -32,11 +32,17 @@ def test_highlights_meet_count_and_character_limits() -> None:
 def test_core_citation_audit_is_complete_and_unique() -> None:
     audit = json.loads((ROOT / "paper/CITATION_AUDIT.json").read_text(encoding="utf-8"))
     entries = audit["entries"]
+    extended_keys = audit["extended_reference_keys"]
     assert len(entries) == 10
-    assert audit["summary"]["existence_verified"] == 10
+    assert len(extended_keys) == 25
+    assert audit["summary"]["references"] == len(entries) + len(extended_keys) == 35
+    assert audit["summary"]["existence_verified"] == audit["summary"]["references"]
     assert audit["summary"]["post_fix_unresolved_core_entries"] == 0
     dois = [entry["doi"].lower() for entry in entries]
     assert len(dois) == len(set(dois))
+    core_keys = {entry["key"] for entry in entries}
+    assert len(extended_keys) == len(set(extended_keys))
+    assert core_keys.isdisjoint(extended_keys)
 
 
 def test_cover_letter_answers_journal_specific_questions() -> None:
