@@ -1,6 +1,6 @@
 # Drug-Cold Gains Do Not Persist under Scaffold Separation in ncRNA–Drug Prediction
 
-> Manuscript status: English submission draft derived from the frozen Chinese factual manuscript. Numerical results are frozen. Author identity, affiliation, licensing, ethics, CRediT, AI-use disclosure, ten directly relevant references, and the public versioned release are recorded. Funding and competing-interest confirmation remain submission blockers; an archive DOI is desirable but is not represented as already assigned.
+> Manuscript status: English submission draft derived from the frozen Chinese factual manuscript. Numerical results are frozen. Author identity, affiliation, licensing, ethics, CRediT, AI-use disclosure, funding, competing interests, originality and submission status, ten directly relevant references, and the public versioned release are recorded. A permanent archive DOI has not been assigned and is not represented as already assigned.
 
 **Author:** Jihao Li  
 **Affiliation:** Independent Researcher, Shenzhen, Guangdong, China  
@@ -129,7 +129,7 @@ On the fixed RAHGL-MDR ordinary drug-cold folds, an entity-balanced prior-residu
 
 ## Data and code availability
 
-The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.1. A permanent archive DOI has not yet been assigned.
+The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.2. A permanent archive DOI has not yet been assigned.
 
 ## Ethics statement
 
@@ -141,11 +141,11 @@ Jihao Li: Conceptualization, Methodology, Software, Validation, Formal analysis,
 
 ## Declaration of competing interest
 
-[STATEMENT CONFIRMED BY ALL AUTHORS REQUIRED.]
+The author declares no competing interests.
 
 ## Funding
 
-[FUNDER, GRANT NUMBER, AND RECIPIENT OR CONFIRMED NO-SPECIFIC-FUNDING STATEMENT REQUIRED.]
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
 ## Declaration of generative AI and AI-assisted technologies
 

@@ -100,8 +100,8 @@
     },
     {
       "path": "paper/reproducibility.md",
-      "bytes": 5423,
-      "sha256": "a19fd873359d016d4b0fcb490a46efb3cda23b636ee37dd94a8ffba290f981f5"
+      "bytes": 5251,
+      "sha256": "39eb9356e7edfb6ab64a17f0d2cca6f61149c04a1ba17860ac8ffdf3254d3eab"
     },
     {
       "path": "paper/result_freeze_record.md",
@@ -110,13 +110,13 @@
     },
     {
       "path": "paper/manuscript_zh_cn.md",
-      "bytes": 21490,
-      "sha256": "8f48afdf762da73c8bdbde1f4ef844d5ce8890f53938b8c542d2740c7a108205"
+      "bytes": 21529,
+      "sha256": "2c85f2111ac8730b77f63e18c8eee3f9a1b407172802eadeccd5632c9bd80fde"
     },
     {
       "path": "paper/manuscript_en.md",
-      "bytes": 25608,
-      "sha256": "1f7315d5764a49605627383be483b3b8ca95e95ca5a5171f7539d87928c01b80"
+      "bytes": 25644,
+      "sha256": "39cb14839983e50181f42b8b69e66c459817a8d90b8a5d5a5e4fc4509aac3ef1"
     },
     {
       "path": "paper/highlights_zh_cn.md",
@@ -130,18 +130,18 @@
     },
     {
       "path": "paper/cover_letter_zh_cn.md",
-      "bytes": 2495,
-      "sha256": "dc2a90e95ef833bd8c8ee280165910691380ba8a288d1b3dd04e7773f92161b2"
+      "bytes": 2549,
+      "sha256": "ef3300e0fb318aed16abb552d48e22f2e4bb8537c97ff6c2734aa499d36952c9"
     },
     {
       "path": "paper/cover_letter_en.md",
-      "bytes": 4632,
-      "sha256": "1009817388ff2cfb6c0223fe6c6774765ecd42f833872e5f0e111f3c1027dfeb"
+      "bytes": 4714,
+      "sha256": "1e64b4b6464cf28985b8dd0dbcc216ac7f18239c31d6ab5952154e54195b7888"
     },
     {
       "path": "paper/author_metadata.md",
-      "bytes": 3396,
-      "sha256": "8e9a6ded1fc74dce3034354f9675ee1c5204312d39f0297fe53267560a3b8be5"
+      "bytes": 3325,
+      "sha256": "c74ea0d8d927cc2828d68119207e40b3a9d06a765ea6e875e998b680d693c8ca"
     },
     {
       "path": "paper/references_verified.bib",
@@ -170,13 +170,13 @@
     },
     {
       "path": "paper/paper_configuration_record.md",
-      "bytes": 2396,
-      "sha256": "504e6084cdfb33bc8ba02f53002780b40b0e3222eeb7220108f401636b7098df"
+      "bytes": 2410,
+      "sha256": "6b108c055fbcaa748e45232ec88c22a69d1c87ef48ef7f8e5b1c077109d99fac"
     },
     {
       "path": "paper/readiness_audit.md",
-      "bytes": 6849,
-      "sha256": "d2ef56596c4d2098db052466b6a885887fab9f9d95f7151f7904821b3c7ac6f2"
+      "bytes": 6980,
+      "sha256": "d7e39893d7ad84e226738c93cc6445bd375e5a7045c93df096e0d58a013f1844"
     },
     {
       "path": "paper/related_work_matrix.md",
@@ -190,8 +190,8 @@
     },
     {
       "path": "paper/submission_checklist.md",
-      "bytes": 3288,
-      "sha256": "133dd9ab6ec4c19f0ae222d76fbd8ce9de4ef08e3537bd3a94ab0b24bd17cbdf"
+      "bytes": 3561,
+      "sha256": "68a649663daff4e6cbf90a3c5f6e31ae752e91e87e45f7159919c7e1da7627cd"
     },
     {
       "path": "paper/PAPER_CLAIM_AUDIT.md",
@@ -256,7 +256,7 @@
     {
       "path": "release/README.md",
       "bytes": 3545,
-      "sha256": "b0736d5cb699cf243127a316d001ccd2720aa7bb62f91e41e4e5ba90391913a3"
+      "sha256": "f0f28501b089c41983a1a7b213046e7f6bdd077b2ee49b49c86f0f2dd1e390fa"
     },
     {
       "path": "release/DATA_CARD.md",
@@ -285,8 +285,8 @@
     },
     {
       "path": "submission-pattern-recognition/main.tex",
-      "bytes": 25917,
-      "sha256": "062de54e5782f6651d11193e7c58223fb968a00fd18975eae8c9ad2df8c0a3c7"
+      "bytes": 25924,
+      "sha256": "c3e73169637f9eda27e2a4ec1248c31f2ade066c2ceb0ac37c1eb79fe67cb881"
     },
     {
       "path": "submission-pattern-recognition/references.bib",
@@ -300,13 +300,13 @@
     },
     {
       "path": "submission-pattern-recognition/cover_letter.tex",
-      "bytes": 3964,
-      "sha256": "17ea1c276a439e2963d48fc263387fc83a4463954bea6dad47803eb1d34b3fd6"
+      "bytes": 4120,
+      "sha256": "517c99f26b69a07a99d65697f404e51da06acef80c11b4cd2a3beb98bd41857f"
     },
     {
       "path": "submission-pattern-recognition/README.md",
-      "bytes": 1368,
-      "sha256": "5f96b7619d00f99e5a361342dafdb20d180da97bbc6a724ba856cf899ae182a7"
+      "bytes": 1461,
+      "sha256": "48c859ae5a1a652e8049c26b87e6babf108011621dfb39570a14e59048152119"
     },
     {
       "path": "submission-pattern-recognition/figures/evaluation-ladder.pdf",

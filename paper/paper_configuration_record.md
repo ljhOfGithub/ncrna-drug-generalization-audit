@@ -20,17 +20,16 @@
 | 核心贡献 | 固定普通 drug-cold 有增益，但本次严格 scaffold 评估未确认稳健增益；统一审计框架；可复核证据包 | 已冻结 |
 | 非贡献 | 新模型 SOTA；跨数据库普适；完整 sChemNET 胜负；因果生物机制 | 现有证据不支持 |
 | 作者/单位/通讯作者 | Jihao Li；Independent Researcher, Shenzhen, Guangdong, China；jihao.li@polyu.edu.hk | 作者已指定；ORCID 未公开核实 |
-| 数据与代码 URL/版本 | `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；`v0.1.1` | 公共版本；无归档 DOI |
-| 基金/利益冲突 | 待作者确认 | 不推测 |
+| 数据与代码 URL/版本 | `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；`v0.1.2` | 公共版本；无归档 DOI |
+| 基金/利益冲突 | 无专项基金；无需要披露的利益冲突 | 作者已确认 |
 
 ## 当前写作边界
 
 目标期刊、英文正文和顺序编号格式已按 `Pattern Recognition` 落盘。当前只保留真实阻断：
 
-1. 基金、利益冲突、原创性与未一稿多投确认；
-2. 永久归档 DOI 尚未分配，GitHub tag 不冒充 DOI；
-3. 当前 10 篇直接相关文献已核验，但相关工作覆盖仍偏窄；未核实到期刊官方存在“35–55 篇”数量要求；
-4. 匿名/实名文件要求和投稿系统字段；
-5. 作者对英文终稿的最终通读确认。
+1. 永久归档 DOI 尚未分配，GitHub tag 不冒充 DOI；
+2. 当前 10 篇直接相关文献已核验，但相关工作覆盖仍偏窄；未核实到期刊官方存在“35–55 篇”数量要求；
+3. 匿名/实名文件要求和投稿系统字段；
+4. 作者对英文终稿的最终通读确认。
 
-这些阻断不影响继续审阅英文稿，但未解决前不得称“可直接上传”。
+这些事项不影响技术打包；正式上传前仍须完成投稿系统字段、匿名/实名选择和最终 PDF 人工通读。

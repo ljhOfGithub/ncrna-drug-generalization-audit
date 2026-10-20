@@ -2,12 +2,12 @@
 
 ## Verdict
 
-**结果已冻结，双语事实稿、可编译投稿工程、双许可证和 clean-room 证据包已完成；尚不能直接投稿。** 条件性主线已经固定，不再以新增实验换取更强结论。英文摘要、Highlights、Cover Letter、10 篇直接相关引文审计和单栏 LaTeX 工程已完成。当前实质阻断项是作者对基金与利益冲突的确认；永久归档 DOI 尚未分配，但不得把 GitHub tag 冒充 DOI。
+**结果已冻结，双语事实稿、可编译投稿工程、作者声明、双许可证和 clean-room 证据包均已完成，已具备技术上传条件。** 条件性主线已经固定，不再以新增实验换取更强结论。英文摘要、Highlights、Cover Letter、10 篇直接相关引文审计和单栏 LaTeX 工程已完成。作者已确认无专项基金、无利益冲突、稿件原创、未一稿多投并同意投稿。上传前仍需在投稿系统选择匿名或实名文件并通读最终 PDF；永久归档 DOI 尚未分配，但不是本轮技术打包阻断项，也不得把 GitHub tag 冒充 DOI。
 
 ## Critical issues
 
-1. **Versioned public evidence package prepared.** A 93-file SHA-256 portable evidence-package scope, data card, third-party boundary, maintenance plan, manuscript/submission source files, claim audit, core reproduction command, and manifest exist. The manifest-only v11 directory rebuilt the 13-row main table and main figure, passed 14 rebuild tests, 22 package tests, and all 93 hashes. Statistics/case tables that require excluded third-party material remain hash-verified unless an explicit flag is used. The public repository and `v0.1.1` target are fixed; final tag/release verification is recorded separately.
-2. **英文稿已形成，但仍需作者终审。** `manuscript_en.md` 与 `submission-pattern-recognition/main.tex` 已保持冻结数字和条件性主张，主稿与 Cover Letter 均通过内置编译。作者身份、公开链接和许可证已记录；仍待基金、利益冲突、原创性和未一稿多投确认。当前 10 篇直接相关文献已核验，相关工作仍偏窄，但未核实到期刊官方存在“35--55 篇”数量要求。
+1. **Versioned public evidence package prepared.** A 93-file SHA-256 portable evidence-package scope, data card, third-party boundary, maintenance plan, manuscript/submission source files, claim audit, core reproduction command, and manifest exist. The manifest-only v12 directory rebuilt the 13-row main table and main figure, passed 14 rebuild tests, 22 package tests, and all 93 hashes. Statistics/case tables that require excluded third-party material remain hash-verified unless an explicit flag is used. The public repository and `v0.1.2` release identify the frozen package; the GitHub tag is not represented as an archival DOI.
+2. **英文稿已形成，声明占位符已清除。** `manuscript_en.md` 与 `submission-pattern-recognition/main.tex` 保持冻结数字和条件性主张，主稿与 Cover Letter 均通过内置编译。作者身份、公开链接、许可证、基金、利益冲突、原创性和未一稿多投声明均已记录。当前 10 篇直接相关文献已核验，相关工作仍偏窄，但未核实到期刊官方存在“35--55 篇”数量要求。
 
 ## Major issues
 
@@ -19,23 +19,23 @@
 ## Minor issues
 
 1. 工作标题已改为与条件性主线一致的 *When Gains under Drug-Cold Evaluation Do Not Persist under Scaffold Separation*；尚未做冻结后标题碰撞终查，因此不能声称标题唯一。
-2. `Pattern Recognition` 是当前工作目标；英文正文、方括号顺序编号、218 词摘要、6 个关键词和 5 条合规 Highlights 已落盘。当前 7 篇引用仍低于期刊建议覆盖。
+2. `Pattern Recognition` 是当前工作目标；英文正文、方括号顺序编号、218 词摘要、6 个关键词和 5 条合规 Highlights 已落盘。当前 10 篇直接相关引用已经核验，但相关工作覆盖仍偏窄。
 3. `runtime_hardware.md` / `.csv` now record the exact machine class and complete LocalGL per-fold wall-clock values. RAHGL clean-run timing and an end-to-end reproduction time remain unmeasured.
 
 ## Checklist status
 
 | Category | Complete | Partial | Missing |
 |---|---|---|---|
-| Introduction | evaluation gap, three RQs, contributions, concrete headline numbers, evaluation-ladder figure, five-full-text-work protocol comparison | design rationale, narrative sequence | full prose |
-| Benchmark section | G1–G5, scope, taxonomy, metrics, deterministic pipeline, seven-row dataset/protocol statistics table, self-contained pipeline figure | quality control and some coverage details distributed across logs | data examples |
-| Experiments | headline table, fine-grained split/overlap/source analyses, four Finding statements, uncertainty, three rule-selected split-sensitivity cases | public-model coverage, research-opportunity synthesis | finalized cross-model comparison |
-| Structure/release | limitations, provenance sources, hashes, tests, reproducibility boundary, data card, third-party policy, maintenance plan, single-command artifact rebuild | related work, appendix plan, release scope | clean checkout/tag, license selection, hosting, venue format |
+| Introduction | evaluation gap, contributions, concrete headline numbers, evaluation-ladder figure, protocol comparison | broader related-work coverage | none within the frozen claim |
+| Benchmark section | scope, taxonomy, metrics, deterministic pipeline, seven-row dataset/protocol statistics table, self-contained pipeline figure | some coverage details remain in supplements | none within the portable scope |
+| Experiments | headline table, fine-grained split/overlap/source analyses, uncertainty, rule-selected split-sensitivity cases | public-model coverage remains qualified | no prospective biological validation |
+| Structure/release | limitations, provenance, hashes, tests, reproducibility boundary, data card, third-party policy, maintenance plan, licenses, public repository and versioned release | final submission-system fields and optional archival DOI | none for technical upload |
 
-## Shortest credible path
+## 投稿前剩余动作
 
-1. 在不吸收三个既有 tracked 修改的前提下形成干净提交/归档，并从干净 checkout 重建主表与图。
-2. 解决新增代码许可证、作者/单位/基金/利益冲突/CRediT、最终数据与代码 URL。
-3. 补齐并核验相关工作、确认作者与声明字段，完成最终页数和投稿前评审。
+1. 作者通读 Overleaf 生成的最终 PDF，确认标题、作者信息、声明和分页。
+2. 按投稿系统要求生成匿名或实名版本并填写系统字段。
+3. 若后续取得永久归档 DOI，再替换“尚未分配”的诚实边界；在此之前保留 GitHub `v0.1.2` 链接。
 
 ## Completed supporting artifacts
 
@@ -47,4 +47,4 @@
 - `runtime_hardware.md` / `.csv`: privacy-safe hardware specification, observed test/smoke/failed-run wall-clock values, and explicit missing timing boundaries.
 - `venue_eligibility.md`: 2026-10-20 official-directory attempt and per-journal `official_partition_unverified` boundary; no third-party partition is promoted to evidence.
 - `candidate_failure_map.md` / `.csv`: complete 58/58 pilot-design index with typed run state and stop decision; a test rejects missing, duplicate, or extra mappings.
-- `../release/`: portable evidence-package definition with SHA-256 manifest, data card, third-party boundary, maintenance plan, bilingual manuscript/submission sources, citation/claim audits, and a clean-room verified core rebuild command. This is not yet a committed public release.
+- `../release/`: portable evidence-package definition with SHA-256 manifest, data card, third-party boundary, maintenance plan, bilingual manuscript/submission sources, citation/claim audits, and a clean-room verified core rebuild command, published as `v0.1.2` without redistributing excluded third-party material.

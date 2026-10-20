@@ -1,6 +1,6 @@
 # Cover Letter — Pattern Recognition
 
-> Submission-blocking fields are enclosed in square brackets. This file must not be submitted until all authors approve them.
+> Submission source synchronized with the author's confirmation of originality, submission status, competing interests, and funding.
 
 [Date]
 
@@ -20,11 +20,9 @@ In response to the journal’s requested cover-letter information:
 2. **Public datasets.** The main analyses use the Mi resource distributed with ncRD-LG and the public data/folds associated with RAHGL-MDR. Boundary analyses use ncRNADrug, NoncoRNA, and a historical SM2miR snapshot. Supplemental diagnostics use metadata or resources from ChEMBL, miRTarBase, STRING, Reactome, CTD, PRISM, and LINCS/GEO subject to their individual access and licensing terms. Third-party raw files are not redistributed.
 3. **Validation metrics.** The primary endpoint is average precision over the full ncRNA candidate set for each held-out drug, macro-averaged across drugs. We report paired bootstrap intervals clustered by drug or Bemis–Murcko scaffold, fold-level direction consistency, multiple training seeds, and a second scaffold split where available. Sampled-unlabeled pooled AUPR is diagnostic only and does not replace the primary endpoint.
 
-[AUTHOR CONFIRMATION REQUIRED: This manuscript is original, is not under consideration elsewhere, and has been approved by all authors.]
+I confirm that this manuscript is original, is not under consideration elsewhere, and has been approved for submission by the author. The author declares no competing interests. This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
-[AUTHOR CONFIRMATION REQUIRED: competing-interest statement and funding statement.]
-
-The review package contains an anonymized or identified manuscript as required by the submission system, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.1. A permanent archive DOI has not yet been assigned.
+The review package contains an anonymized or identified manuscript as required by the submission system, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.2. A permanent archive DOI has not yet been assigned.
 
 Thank you for your consideration.
 
