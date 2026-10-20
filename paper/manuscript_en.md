@@ -1,6 +1,6 @@
 # Drug-Cold Gains Do Not Persist under Scaffold Separation in ncRNA–Drug Prediction
 
-> Manuscript status: English submission draft derived from the frozen Chinese factual manuscript. Numerical results are frozen. Author identity, affiliation, licensing, ethics, CRediT, AI-use disclosure, funding, competing interests, originality and submission status, ten directly relevant references, and the public versioned release are recorded. A permanent archive DOI has not been assigned and is not represented as already assigned.
+> Manuscript status: English submission draft derived from the frozen Chinese factual manuscript. Numerical results are frozen. Author identity, affiliation, licensing, ethics, CRediT, AI-use disclosure, funding, competing interests, originality and submission status, 35 audited references, and the public versioned release are recorded. A permanent archive DOI has not been assigned and is not represented as already assigned.
 
 **Author:** Jihao Li  
 **Affiliation:** Independent Researcher, Shenzhen, Guangdong, China  
@@ -14,7 +14,9 @@ Drug–non-coding RNA (ncRNA) association models are often evaluated using rando
 
 ## 1. Introduction
 
-Drug–ncRNA association prediction seeks to recover or extend potentially relevant associations from previously reported relations. Recent work has used graph neural networks, local subgraphs, multi-view representations, and biological language models, while evaluation has expanded from random pair splits to drug-cold, RNA-cold, and double-cold protocols. These protocols answer different questions. A random pair split allows training and test sets to share entities. An ordinary drug-cold split withholds test-drug identities but does not require their chemical scaffolds to be absent from training. A scaffold-disjoint split imposes the stronger condition that the structural cores of test drugs are unseen. Without distinguishing these levels, evidence for “new-drug prediction” can be interpreted as the stronger and unsupported claim of extrapolation to new chemical scaffolds.
+Drug–ncRNA association prediction seeks to recover or extend potentially relevant associations from previously reported relations. The task lies between interaction prediction and retrieval: for each drug, a model ranks a large candidate set in which reported positives are sparse and unreported pairs remain unlabeled. Related RNA–small-molecule systems span feature encoders, affinity regressors, structure-based virtual screening, and sequence-based interaction scoring [11–15]. Their inputs, endpoints, negative constructions, and candidate spaces differ, so their reported numbers are not directly interchangeable.
+
+Recent ncRNA–drug work has used graph neural networks, local subgraphs, multi-view representations, and biological language models, while evaluation has expanded from random pair splits to drug-cold, RNA-cold, and double-cold protocols. A random pair split allows shared entities; ordinary drug-cold withholds test-drug identities but may retain related chemical cores; scaffold-disjoint further requires unseen structural cores. This parallels the S1–S4 distinction in drug–target prediction [24]. Without this separation, “new-drug prediction” can be misread as the unsupported stronger claim of extrapolation to new chemical scaffolds.
 
 A second issue is the strength of simple priors. In full-candidate ranking, reporting frequencies differ markedly across RNAs. Ranking candidates only by RNA frequency in the training set can therefore provide a strong drug-independent baseline. A model may outperform more complex public neural systems while adding little over this prior. Likewise, database-level validation may reuse RNAs, drugs, and positive pairs. Calling a second database independent without auditing these overlaps can overstate the evidence.
 
@@ -30,9 +32,25 @@ The contributions are as follows:
 
 ## 2. Related work
 
+### 2.1. RNA–small-molecule and ncRNA–drug prediction
+
+RNAincoder learns representations from RNA and compound descriptors [11]. RNAmigos predicts ligand fingerprints from RNA-pocket graphs and ranks native ligands among decoys [12], while RNAmigos2 adds large-scale docking supervision and binding-site cluster separation [13]. RSAPred evaluates RNA–small-molecule affinity regression [14]. RNAsmol reports RNA-cold, small-molecule-cold, double-cold, and decoy-ranking evaluations [15]. These studies establish relevant modeling precedents, but their endpoints are not equivalent to full-candidate drug-macro AP on association databases.
+
 ncRD-LG combines biological language models with local semantic subgraphs for drug–ncRNA association prediction. Its principal protocol is a random pair-level split, while leave-one-drug-out, leave-one-ncRNA-out, and scaffold-based splitting are identified as future evaluation directions [1]. RAHGL-MDR evaluates leakage-controlled edge, miRNA-cold, drug-cold, and double-cold settings and includes full-candidate ranking and degree/popularity baselines [2]. Cold-start evaluation and full-candidate ranking are therefore not new in this study.
 
 HMVCC reports edge-level, cross-species, cross-database, and drug-cold settings for ncRNA–drug association prediction [3]. MGCNA learns multi-view graph-convolutional representations for miRNA–drug association prediction, whereas PLMF-MDA combines RNA-FM, ChemBERTa-2, intrinsic encoders, and cross-modal attention for miRNA–drug resistance and sensitivity associations [4,5]. sChemNET directly studies small molecules targeting microRNA function and evaluates chemically dissimilar test subsets using a molecular-fingerprint similarity threshold; this is not a Bemis–Murcko scaffold split [6]. The public GCFMCL implementation uses drug-as-user Bayesian personalized ranking during representation learning, so we do not claim to introduce pairwise ranking for this task [7].
+
+### 2.2. Pretrained representations and cold-start transfer
+
+RNA-FM, RNAErnie, and BiRNA-BERT learn transferable RNA representations from large sequence corpora [16–18], whereas ChemBERTa pretrains on SMILES and evaluates molecular-property tasks including scaffold splits [19]. In drug–target prediction, TransDTI and GraphDTA use language or graph representations [20,22], C2P2 transfers auxiliary interaction knowledge to unseen drugs or targets [21], and DrugBAN compares random, unseen-entity, cold-pair, and clustering-based cross-domain protocols [23]. DrugBAN specifically notes that identity-level unseen-drug evaluation can remain easy when highly similar molecules cross the partition. Pretraining and identity novelty therefore do not by themselves establish chemical-core novelty.
+
+### 2.3. Local subgraphs, ranking, and evaluation design
+
+SEAL establishes local enclosing subgraphs as a general link-prediction strategy [25], while BPR formalizes pairwise learning from implicit feedback without treating every missing entry as a verified negative [26]. Pahikkala et al. separate pair-wise, unseen-drug, unseen-target, and double-unseen settings [24]. MoleculeNet likewise warns that random splitting is often inappropriate for chemical data and uses scaffold grouping as a stronger structural test [27]. Precision–recall analysis is especially informative for imbalanced candidate spaces, and optimizing ROC area does not guarantee optimizing PR area [28,29].
+
+### 2.4. Identifier and evidence provenance
+
+miRBase and Rfam provide complementary sequence naming and family-annotation resources [30,35]. PubChem distinguishes depositor-provided substances from standardized compound structures [31]. RNAInter mixes experimental and computational interactions [32], lncRNAdb focuses on manually curated functional evidence [33], and DrugBank includes both curated and predicted fields under source-specific terms [34]. These differences motivate explicit normalization and provenance audits; absence from a database is not a confirmed biological negative.
 
 As of the freeze date, our bounded full-text review found no single direct neighbor that jointly reports Bemis–Murcko scaffold separation, full-candidate drug-macro AP, a training-only RNA-frequency prior, cross-database entity de-overlap, temporal-new-drug evidence, and labels supported by distinct PubMed identifiers in one ncRNA–drug audit. This is a provisional gap under a bounded search, not a claim of priority or exhaustive absence.
 
@@ -49,23 +67,33 @@ We distinguish two main protocols:
 
 Ordinary drug-cold evaluation does not imply that every test drug shares a training scaffold, and it is not equivalent to strict scaffold extrapolation. We compare two frozen protocols and do not attribute their difference to a single leakage mechanism.
 
-### 3.2. Data and candidate spaces
+### 3.2. Protocol hierarchy and split construction
+
+Random-pair, drug-cold, double-cold, scaffold-disjoint, and temporal-new-drug protocols estimate different deployment questions rather than one monotone difficulty scale. Identity-disjoint drugs may still share close analogues or the same two-dimensional core with training drugs. The ordinary protocol uses the fixed RAHGL-MDR folds. The strict protocol computes a Bemis–Murcko framework per standardized molecule and keeps each framework group in one outer partition; acyclic molecules are grouped by canonical SMILES. This follows the chemical-learning rationale of scaffold splitting [27]. Group labels are computed before fitting, and validation data are used only for frozen candidate choices.
+
+### 3.3. Data and candidate spaces
 
 The RAHGL-MDR data contain 635 miRNAs, 216 drugs, and 5,379 unique positive pairs; 197 drugs with at least one positive association enter the drug-cold or scaffold-cold outer tests. The aligned Mi artifact contains 1,805 ncRNAs, 625 drugs, and 9,395 positive pairs, with 606 active drugs entering the principal scaffold-disjoint evaluation. ncRNADrug, NoncoRNA, a temporal subset from SM2miR, and a Mi subset supported by distinct PubMed identifiers are used for boundary analyses. Aligned resource counts and provenance-field availability are reported in the supplementary dataset/protocol statistics.
 
 All primary evaluations enumerate every ncRNA candidate for each test drug. Overlap between Mi and ncRNADrug is computed using frozen normalization rules for RNA names, drug names, and positive pairs. The de-overlap confirmation removes entities that match Mi; it does not selectively remove pairs after observing model scores.
 
-### 3.3. Candidate and strong baseline
+RNA names are checked against the roles documented by miRBase and Rfam [30,35], while compound normalization follows the PubChem distinction between depositor records and standardized structures [31]. Evidence provenance is retained because RNAInter, lncRNAdb, and DrugBank differ in evidence type and curation scope [32–34]. Normalization reduces superficial mismatches; it does not harmonize assays or turn missing pairs into negatives.
+
+### 3.4. Candidate and strong baseline
 
 The RNA prior is estimated only from RNA positive counts among inner-training drugs and uses Laplace smoothing. The candidate learns a pairwise residual over this prior from drug and RNA features. For the RAHGL-MDR main analysis, each training drug contributes equally to total pairwise loss, preventing drugs with more observed edges from dominating the objective. A residual scale is selected from a frozen grid using only the inner validation set; a scale of zero exactly recovers the RNA prior.
 
 We do not claim that this objective is a novel ranking loss. GCFMCL already uses Bayesian personalized ranking for this task. Here the candidate tests whether entity-balanced training improves a specific drug-cold distribution rather than establishing universal algorithmic novelty.
 
-### 3.4. Comparators and implementation boundaries
+The residual is trained from observed-versus-unobserved candidate orderings. Following the implicit-feedback distinction in BPR [26], unobserved pairs remain unlabeled rather than experimentally verified negatives.
+
+### 3.5. Comparators and implementation boundaries
 
 The strict Mi endpoint includes a dynamically resampled adaptation of ncRD-LG LocalGL, an sChemNET ablation without miRNA sequence information or external unlabeled-drug augmentation, and an independent three-seed strict adaptation of PLMF-MDA. The sChemNET and PLMF-MDA results are not reproductions of the original reported numbers. RAHGL-MDR does not release its training implementation and per-candidate predictions; we therefore reuse its public data and fixed folds for diagnostic baselines but do not make a paired head-to-head claim against the authors’ trained model.
 
-### 3.5. Statistical analysis and freeze rules
+### 3.6. Statistical analysis and freeze rules
+
+Average precision is computed per held-out drug over its complete candidate list and then macro-averaged. PR-based summaries are appropriate because positives are sparse and false positives directly reduce precision [28,29]. AUROC is not the primary endpoint, and AP from balanced or restricted negative sets is not treated as comparable to full-candidate AP.
 
 For ordinary RAHGL-MDR drug-cold evaluation, paired bootstrap resampling operates over drug-level differences. For strict scaffold-cold evaluation, bootstrap resampling is clustered by scaffold group. Both main RAHGL-MDR protocols report 95% intervals, the number of non-decreasing folds, and three training seeds. The frozen strict-scaffold confirmation gate requires an AP gain of at least 0.01 over the RNA prior, a confidence-interval lower bound above zero, non-decrease in at least four of five folds, positive gains for all three seeds, and gains of at least 0.01 for at least two seeds. An earlier ordinary drug-cold gate additionally required exceeding the popularity MAP reported in RAHGL-MDR.
 
@@ -129,7 +157,7 @@ On the fixed RAHGL-MDR ordinary drug-cold folds, an entity-balanced prior-residu
 
 ## Data and code availability
 
-The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.2. A permanent archive DOI has not yet been assigned.
+The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.3. A permanent archive DOI has not yet been assigned.
 
 ## Ethics statement
 
@@ -172,3 +200,53 @@ During manuscript preparation, the author used OpenAI Codex to assist literature
 [9] L. Li, P. Wu, Z. Wang, X. Meng, C. Zha, Z. Li, T. Qi, Y. Zhang, B. Han, S. Li, C. Jiang, Z. Zhao, J. Cai, NoncoRNA: a database of experimentally supported non-coding RNAs and drug targets in cancer, Journal of Hematology & Oncology 13 (2020) 15. https://doi.org/10.1186/s13045-020-00849-7.
 
 [10] X. Liu, S. Wang, F. Meng, J. Wang, Y. Zhang, E. Dai, X. Yu, X. Li, W. Jiang, SM2miR: a database of the experimentally validated small molecules' effects on microRNA expression, Bioinformatics 29 (3) (2013) 409–411. https://doi.org/10.1093/bioinformatics/bts698.
+
+[11] Y. Wang et al., RNAincoder: a deep learning-based encoder for RNA and RNA-associated interaction, Nucleic Acids Research 51 (W1) (2023) W509–W519. https://doi.org/10.1093/nar/gkad404.
+
+[12] C. Oliver et al., Augmented base pairing networks encode RNA-small molecule binding preferences, Nucleic Acids Research 48 (14) (2020) 7690–7699. https://doi.org/10.1093/nar/gkaa583.
+
+[13] J.G. Carvajal-Patiño et al., RNAmigos2: accelerated structure-based RNA virtual screening with deep graph learning, Nature Communications 16 (2025) 2799. https://doi.org/10.1038/s41467-025-57852-0.
+
+[14] S.R. Krishnan, A. Roy, M.M. Gromiha, Reliable method for predicting the binding affinity of RNA-small molecule interactions using machine learning, Briefings in Bioinformatics 25 (2) (2024) bbae002. https://doi.org/10.1093/bib/bbae002.
+
+[15] H. Ma et al., RNA–ligand interaction scoring via data perturbation and augmentation modeling, Nature Computational Science 5 (8) (2025) 648–660. https://doi.org/10.1038/s43588-025-00820-x.
+
+[16] J. Chen et al., Interpretable RNA Foundation Model from Unannotated Data for Highly Accurate RNA Structure and Function Predictions, arXiv:2204.00300 (2022). https://doi.org/10.48550/arXiv.2204.00300.
+
+[17] N. Wang et al., Multi-purpose RNA language modelling with motif-aware pretraining and type-guided fine-tuning, Nature Machine Intelligence 6 (5) (2024) 548–557. https://doi.org/10.1038/s42256-024-00836-4.
+
+[18] M.T. Tahmid et al., BiRNA-BERT allows efficient RNA language modeling with adaptive tokenization, Communications Biology 8 (2025) 1621. https://doi.org/10.1038/s42003-025-08982-0.
+
+[19] S. Chithrananda, G. Grand, B. Ramsundar, ChemBERTa: Large-Scale Self-Supervised Pretraining for Molecular Property Prediction, arXiv:2010.09885 (2020). https://doi.org/10.48550/arXiv.2010.09885.
+
+[20] Y. Kalakoti, S. Yadav, D. Sundar, TransDTI: Transformer-Based Language Models for Estimating DTIs and Building a Drug Recommendation Workflow, ACS Omega 7 (3) (2022) 2706–2717. https://doi.org/10.1021/acsomega.1c05203.
+
+[21] T.M. Nguyen, T. Nguyen, T. Tran, Mitigating cold-start problems in drug-target affinity prediction with interaction knowledge transferring, Briefings in Bioinformatics 23 (4) (2022) bbac269. https://doi.org/10.1093/bib/bbac269.
+
+[22] T. Nguyen et al., GraphDTA: predicting drug–target binding affinity with graph neural networks, Bioinformatics 37 (8) (2021) 1140–1147. https://doi.org/10.1093/bioinformatics/btaa921.
+
+[23] P. Bai et al., Interpretable bilinear attention network with domain adaptation improves drug–target prediction, Nature Machine Intelligence 5 (2) (2023) 126–136. https://doi.org/10.1038/s42256-022-00605-1.
+
+[24] T. Pahikkala et al., Toward more realistic drug–target interaction predictions, Briefings in Bioinformatics 16 (2) (2015) 325–337. https://doi.org/10.1093/bib/bbu010.
+
+[25] M. Zhang, Y. Chen, Link Prediction Based on Graph Neural Networks, Advances in Neural Information Processing Systems 31 (2018) 5165–5175.
+
+[26] S. Rendle, C. Freudenthaler, Z. Gantner, L. Schmidt-Thieme, BPR: Bayesian Personalized Ranking from Implicit Feedback, UAI (2009) 452–461.
+
+[27] Z. Wu et al., MoleculeNet: a benchmark for molecular machine learning, Chemical Science 9 (2) (2018) 513–530. https://doi.org/10.1039/C7SC02664A.
+
+[28] J. Davis, M. Goadrich, The Relationship Between Precision-Recall and ROC Curves, ICML (2006) 233–240. https://doi.org/10.1145/1143844.1143874.
+
+[29] T. Saito, M. Rehmsmeier, The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets, PLOS ONE 10 (3) (2015) e0118432. https://doi.org/10.1371/journal.pone.0118432.
+
+[30] A. Kozomara, S. Griffiths-Jones, miRBase: annotating high confidence microRNAs using deep sequencing data, Nucleic Acids Research 42 (D1) (2014) D68–D73. https://doi.org/10.1093/nar/gkt1181.
+
+[31] S. Kim et al., PubChem 2023 update, Nucleic Acids Research 51 (D1) (2023) D1373–D1380. https://doi.org/10.1093/nar/gkac956.
+
+[32] J. Kang et al., RNAInter v4.0: RNA interactome repository with redefined confidence scoring system and improved accessibility, Nucleic Acids Research 50 (D1) (2022) D326–D332. https://doi.org/10.1093/nar/gkab997.
+
+[33] X.C. Quek et al., lncRNAdb v2.0: expanding the reference database for functional long noncoding RNAs, Nucleic Acids Research 43 (D1) (2015) D168–D173. https://doi.org/10.1093/nar/gku988.
+
+[34] D.S. Wishart et al., DrugBank 5.0: a major update to the DrugBank database for 2018, Nucleic Acids Research 46 (D1) (2018) D1074–D1082. https://doi.org/10.1093/nar/gkx1037.
+
+[35] I. Kalvari et al., Rfam 14: expanded coverage of metagenomic, viral and microRNA families, Nucleic Acids Research 49 (D1) (2021) D192–D200. https://doi.org/10.1093/nar/gkaa1047.

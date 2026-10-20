@@ -5,7 +5,7 @@
 尊敬的编辑：
 
 我们拟向 *Pattern Recognition* 提交 Original Article，工作标题为：
-*When Gains under Drug-Cold Evaluation Do Not Persist under Scaffold Separation: A Conditional Study of ncRNA–Drug Association Prediction*。
+*Drug-Cold Gains Do Not Persist under Scaffold Separation in ncRNA–Drug Prediction*。
 
 本研究关注 ncRNA–药物关联预测中两个经常被混用的评估条件：固定普通 drug-cold
 新药排序，以及训练与测试 Bemis–Murcko scaffold 完全隔离的新骨架评估。
@@ -24,7 +24,7 @@
 边界，提供共同终点、公开方法严格适配、不确定性估计和可复核证据包。稿件不会把未知关联
 称为真实阴性，也不会把独立适配写成作者原模型复现。
 
-作者确认：本稿为原创、未在其他期刊审理，且作者同意投稿。作者声明不存在利益冲突；本研究未获得公共、商业或非营利资助机构的专项基金资助。数据与代码的公开 URL：`https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；冻结版本：`v0.1.2`。独立代码采用 MIT，原创文稿/图采用 CC BY 4.0；尚未分配永久归档 DOI。
+作者确认：本稿为原创、未在其他期刊审理，且作者同意投稿。作者声明不存在利益冲突；本研究未获得公共、商业或非营利资助机构的专项基金资助。数据与代码的公开 URL：`https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；冻结版本：`v0.1.3`。独立代码采用 MIT，原创文稿/图采用 CC BY 4.0；尚未分配永久归档 DOI。
 
 感谢审阅。
 

@@ -1,16 +1,19 @@
 {
   "audit_date": "2026-10-20",
-  "scope": "seven core method references and three directly used data-resource papers",
+  "scope": "all 35 references cited by the Pattern Recognition submission manuscript",
   "review_independence": "same-family",
   "acceptance_status": "provisional",
   "summary": {
-    "references": 10,
-    "existence_verified": 10,
+    "references": 35,
+    "existence_verified": 35,
     "keep_without_bibliographic_replacement": 3,
     "fix": 3,
     "remove_and_replace_composite_record": 1,
     "post_fix_unresolved_core_entries": 0,
-    "official_journal_reference_count_requirement_verified": false
+    "full_text_or_authoritative_complete_source_checked": 32,
+    "qualified_partial_source_entries": 3,
+    "official_journal_reference_count_guidance_verified": true,
+    "official_journal_requested_reference_range": "35-55"
   },
   "entries": [
     {
@@ -113,5 +116,34 @@
       "post_fix_status": "added",
       "boundary": "PubMed metadata and abstract plus secondary full-text cross-check; OUP full text was blocked by Cloudflare"
     }
-  ]
+  ],
+  "extended_reference_keys": [
+    "wang2023rnaincoder",
+    "oliver2020rnamigos",
+    "carvajalpatino2025rnamigos2",
+    "krishnan2024rsapred",
+    "ma2025rnasmol",
+    "wang2024rnaernie",
+    "tahmid2025birnabert",
+    "chen2022rnafm",
+    "chithrananda2020chemberta",
+    "kalakoti2022transdti",
+    "nguyen2022coldstartdta",
+    "nguyen2021graphdta",
+    "bai2023drugban",
+    "pahikkala2015realistic",
+    "zhang2018seal",
+    "rendle2009bpr",
+    "wu2018moleculenet",
+    "davis2006prroc",
+    "saito2015pr",
+    "kozomara2014mirbase",
+    "kim2023pubchem",
+    "kang2022rnainter",
+    "quek2015lncrnadb",
+    "wishart2018drugbank",
+    "kalvari2021rfam"
+  ],
+  "extended_set_status": "existence and context verified; each key is cited in main.tex; scaffold definition cites MoleculeNet because the original Bemis-Murcko paper was not legally retrievable without a browser challenge",
+  "browser_boundary": "system Chrome default profile only; no built-in browser, Edge, debug port, new profile, CAPTCHA bypass, paywall bypass, form submission, or credential submission"
 }
