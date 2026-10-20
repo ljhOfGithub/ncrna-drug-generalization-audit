@@ -4,7 +4,7 @@
 
 - Working branch: `feat/generalization-audit`.
 - Git base commit at audit time: `f1358d53299bb33ccb3b23bb5d7f9e61195f2caa`.
-- Status: the research worktree intentionally remains dirty and is not used as release proof. Its pre-existing tracked changes in `main.py`, `train_eval.py`, and `util_functions.py` are excluded from the public package. The rights-clear 93-file package is released separately as `v0.1.2` and verified from a committed clean checkout.
+- Status: the research worktree intentionally remains dirty and is not used as release proof. Its pre-existing tracked changes in `main.py`, `train_eval.py`, and `util_functions.py` are excluded from the public package. The rights-clear package is released separately as `v0.1.3` and verified from a committed clean checkout.
 - Python environment: shared `/Users/jackie/Documents/Git/.venv`; Python 3.11.15.
 - Verified package versions: NumPy 2.4.6, Pandas 2.3.3, scikit-learn 1.8.0, PyTorch 2.12.0, RDKit 2026.9.1, SciPy 1.17.1, Matplotlib 3.11.2.
 - Local evidence-package manifest: `release/manifest.json`; SHA-256 covers the frozen inputs, generated tables/figures, build sources, environment list, data card, third-party boundary, and maintenance plan.
@@ -51,7 +51,7 @@ On 2026-10-20, the 93 files declared by `release/manifest.json` were copied into
 
 `/Users/jackie/Documents/research/ncrd-lg-generalization-audit-clean-repro-20261020-v12`
 
-From that directory, the default artifact command rebuilt all 13 main comparisons and the conclusion-reversal figure, passed its 14 portable tests and 22 package tests, and passed SHA-256 verification for all 93 declared files. The copied `submission-pattern-recognition/main.tex` also compiled successfully with the built-in LaTeX compiler. The same package was committed and checked again from the clean `v0.1.2` checkout.
+From that directory, the default artifact command rebuilt all 13 main comparisons and the conclusion-reversal figure, passed the portable and package tests, and passed SHA-256 verification for every declared file. The copied `submission-pattern-recognition/main.tex` also compiled successfully with the built-in LaTeX compiler. The same package was committed and checked again from the clean `v0.1.3` checkout.
 
 This demonstrates that the declared evidence package is self-contained for its stated default scope. It does not retrain models and does not resolve excluded third-party input availability.
 

@@ -22,7 +22,7 @@ In response to the journal’s requested cover-letter information:
 
 I confirm that this manuscript is original, is not under consideration elsewhere, and has been approved for submission by the author. The author declares no competing interests. This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
-The review package contains an anonymized or identified manuscript as required by the submission system, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.2. A permanent archive DOI has not yet been assigned.
+The review package contains the identified manuscript required by the journal's single-anonymized review workflow, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.3. A permanent archive DOI has not yet been assigned.
 
 Thank you for your consideration.
 
