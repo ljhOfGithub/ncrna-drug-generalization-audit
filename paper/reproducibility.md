@@ -51,7 +51,7 @@ Primary frozen results referenced by the paper are listed row-by-row in `paper/m
 
 On 2026-10-20, the 92 files declared by `release/manifest.json` were copied into a new directory:
 
-`/Users/jackie/Documents/research/ncrd-lg-generalization-audit-clean-repro-20261020-v9`
+`/Users/jackie/Documents/research/ncrd-lg-generalization-audit-clean-repro-20261020-v11`
 
 From that directory, the default artifact command rebuilt all 13 main comparisons and the conclusion-reversal figure, passed its 14 portable tests, and passed SHA-256 verification for all 92 declared files. The copied `submission-pattern-recognition/main.tex` also compiled successfully with the built-in LaTeX compiler.
 

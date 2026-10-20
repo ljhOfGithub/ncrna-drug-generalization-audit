@@ -44,7 +44,7 @@
 
 ## 当前状态
 
-`v0.1.0` 包只包含权利边界清晰的独立工件。发布前的 manifest-only 干净目录完成了 13 行主表、主图、14 项重建测试、22 项包内测试和全部 93 个受管理文件哈希核验；投稿主稿也由桌面编辑器编译通过。独立代码采用 MIT，原创文稿、图和说明采用 CC BY 4.0。原作者仓库未发现许可证文件，因此其代码、原始数据、权重与缓存均不进入本 release。公共仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；GitHub 标签不是永久归档 DOI。
+`v0.1.1` 包只包含权利边界清晰的独立工件。发布前的 manifest-only 干净目录完成了 13 行主表、主图、14 项重建测试、22 项包内测试和全部 93 个受管理文件哈希核验；投稿主稿也由桌面编辑器编译通过。独立代码采用 MIT，原创文稿、图和说明采用 CC BY 4.0。原作者仓库未发现许可证文件，因此其代码、原始数据、权重与缓存均不进入本 release。公共仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；GitHub 标签不是永久归档 DOI。
 
 ## 冻结边界
 

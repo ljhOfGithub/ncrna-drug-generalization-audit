@@ -6,8 +6,8 @@
 
 ## Critical issues
 
-1. **Versioned public evidence package prepared.** A 93-file SHA-256 portable evidence-package scope, data card, third-party boundary, maintenance plan, manuscript/submission source files, claim audit, core reproduction command, and manifest exist. The manifest-only v9 directory rebuilt the 13-row main table and main figure, passed 14 rebuild tests, 22 package tests, and all 93 hashes. Statistics/case tables that require excluded third-party material remain hash-verified unless an explicit flag is used. The public repository and `v0.1.0` target are fixed; final tag/release verification is recorded separately.
-2. **英文稿已形成，但仍不是可上传终稿。** `manuscript_en.md` 与 `submission-pattern-recognition/main.tex` 已保持冻结数字和条件性主张，主稿与 Cover Letter 均通过内置编译。作者/声明占位、公开链接、许可证授权、期刊建议的 35–55 篇相关工作覆盖，以及 20–35 页最终页数仍未完成。
+1. **Versioned public evidence package prepared.** A 93-file SHA-256 portable evidence-package scope, data card, third-party boundary, maintenance plan, manuscript/submission source files, claim audit, core reproduction command, and manifest exist. The manifest-only v11 directory rebuilt the 13-row main table and main figure, passed 14 rebuild tests, 22 package tests, and all 93 hashes. Statistics/case tables that require excluded third-party material remain hash-verified unless an explicit flag is used. The public repository and `v0.1.1` target are fixed; final tag/release verification is recorded separately.
+2. **英文稿已形成，但仍需作者终审。** `manuscript_en.md` 与 `submission-pattern-recognition/main.tex` 已保持冻结数字和条件性主张，主稿与 Cover Letter 均通过内置编译。作者身份、公开链接和许可证已记录；仍待基金、利益冲突、原创性和未一稿多投确认。当前 10 篇直接相关文献已核验，相关工作仍偏窄，但未核实到期刊官方存在“35--55 篇”数量要求。
 
 ## Major issues
 

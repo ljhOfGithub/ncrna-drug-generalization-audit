@@ -2,7 +2,7 @@
 
 > 稿件状态：简体中文事实稿，结果已冻结；尚不是可直接上传期刊系统的英文终稿。  
 > 工作英文标题：*When Gains under Drug-Cold Evaluation Do Not Persist under Scaffold Separation: A Conditional Study of ncRNA–Drug Association Prediction*  
-> 作者、单位、通讯作者：TBD
+> 作者：Jihao Li；单位：Independent Researcher, Shenzhen, Guangdong, China；通讯邮箱：jihao.li@polyu.edu.hk
 
 ## 摘要
 
@@ -125,15 +125,15 @@ RNA 频率先验反映训练数据中的报道结构，而不是生物学机制�
 
 ## 数据与代码可用性
 
-公开证据包提供冻结 summary/config、主表、图、重建脚本、测试、第三方边界和 SHA-256 清单。第三方原始数据、仓库代码、模型权重和论文 PDF 不随包重新分发。公开仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`，冻结版本为 `v0.1.0`。尚未分配永久归档 DOI，不把 GitHub 标签冒充 DOI。
+公开证据包提供冻结 summary/config、主表、图、重建脚本、测试、第三方边界和 SHA-256 清单。第三方原始数据、仓库代码、模型权重和论文 PDF 不随包重新分发。公开仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`，冻结版本为 `v0.1.1`。尚未分配永久归档 DOI，不把 GitHub 标签冒充 DOI。
 
 ## 伦理声明
 
-本研究使用公开或依法访问的计算数据，不涉及新的人体招募、干预或可识别个体信息。是否需要期刊特定伦理豁免措辞：TBD，由作者与单位确认。
+本研究使用公开或依法访问的计算数据，不涉及新的人体招募、干预、动物实验或可识别个体信息，因此伦理审批与知情同意不适用。
 
 ## 作者贡献（CRediT）
 
-作者名单和角色：TBD。提交前必须逐一确认 Conceptualization、Methodology、Software、Validation、Formal analysis、Investigation、Data curation、Writing、Visualization、Supervision 和 Funding acquisition，不推测贡献。
+Jihao Li：Conceptualization、Methodology、Software、Validation、Formal analysis、Investigation、Data curation、Writing–original draft、Writing–review and editing、Visualization、Project administration。
 
 ## 利益冲突
 
@@ -145,7 +145,7 @@ TBD；没有信息时不得填写虚构项目。
 
 ## 生成式 AI 使用说明
 
-本研究使用生成式 AI 辅助代码审查、结果边界整理和文本草拟；所有数据处理、数值、引用、主张和最终文字均须由作者核验并承担责任。具体声明按目标期刊最新政策终排。
+稿件准备期间，作者使用 OpenAI Codex 辅助文献发现、代码起草与检查、执行支持、统计结果核对、稿件草拟、语言编辑、引用核验和一致性检查。作者审阅并编辑了全部输出，对照来源材料和已保存的机器可读结果核验引用与报告数值，并对论文内容承担全部责任。生成式 AI 未被列为作者，也未用于创建或修改原始研究数据。
 
 ## 参考文献标识（已核实，待期刊格式终排）
 
@@ -156,5 +156,8 @@ TBD；没有信息时不得填写虚构项目。
 5. Nan Sheng, Yunzhi Liu, Ling Gao, Wenju Hou, Lan Huang, Yan Wang. A pre-trained language model-based cross-modal fusion framework for predicting miRNA-drug resistance and sensitivity associations. *PLOS Computational Biology* 22(2):e1013968 (2026). DOI: `10.1371/journal.pcbi.1013968`.
 6. Diego Galeano, Imrat, Jeffrey Haltom, Chaylen Andolino, Aliza Yousey, Victoria Zaksas, Saswati Das, Stephen B. Baylin, Douglas C. Wallace, Frank J. Slack, Francisco J. Enguita, Eve Syrkin Wurtele, Dorothy Teegarden, Robert Meller, Daniel Cifuentes, Afshin Beheshti. sChemNET: a deep learning framework for predicting small molecules targeting microRNA function. *Nature Communications* 15:9149 (2024). DOI: `10.1038/s41467-024-49813-w`.
 7. Jinhang Wei, Linlin Zhuo, Zhecheng Zhou, Xinze Lian, Xiangzheng Fu, Xiaojun Yao. GCFMCL: predicting miRNA-drug sensitivity using graph collaborative filtering and multi-view contrastive learning. *Briefings in Bioinformatics* 24(4):bbad247 (2023). DOI: `10.1093/bib/bbad247`.
+8. Xinyu Cao 等. ncRNADrug: a database for validated and predicted ncRNAs associated with drug resistance and targeted by drugs. *Nucleic Acids Research* 52(D1):D1393–D1399 (2024). DOI: `10.1093/nar/gkad1042`.
+9. Lulu Li 等. NoncoRNA: a database of experimentally supported non-coding RNAs and drug targets in cancer. *Journal of Hematology & Oncology* 13:15 (2020). DOI: `10.1186/s13045-020-00849-7`.
+10. Xinyi Liu 等. SM2miR: a database of the experimentally validated small molecules' effects on microRNA expression. *Bioinformatics* 29(3):409–411 (2013). DOI: `10.1093/bioinformatics/bts698`.
 
-> 参考文献 1–6 已在 2026-10-20 从正式出版页面逐条核验。参考文献 7 的身份由 PubMed 正式记录核验，BPR 语境由固定提交源码核验，但出版商全文仍受 Cloudflare 阻断，不能记录为已完成全文精读。当前仅有 7 篇核心文献，未达到目标期刊建议的 35–55 篇覆盖，不能把本表称为投稿终版参考文献。
+> 参考文献 1–6 已在 2026-10-20 从正式出版页面逐条核验。参考文献 7 的身份由 PubMed 正式记录核验，BPR 语境由固定提交源码核验，但出版商全文仍受 Cloudflare 阻断。参考文献 8–9 已读官方 PMC 全文；参考文献 10 已核 PubMed 正式记录与摘要，并由 ncRNADrug 官方全文交叉核对，OUP 全文仍受 Cloudflare 阻断。未核实到期刊官方存在“35–55 篇”数量要求，不以凑数替代逐条核验。

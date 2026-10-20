@@ -24,7 +24,7 @@ In response to the journal’s requested cover-letter information:
 
 [AUTHOR CONFIRMATION REQUIRED: competing-interest statement and funding statement.]
 
-The review package contains an anonymized or identified manuscript as required by the submission system, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.0. A permanent archive DOI has not yet been assigned.
+The review package contains an anonymized or identified manuscript as required by the submission system, editable figures/tables, highlights, supplementary material, and a versioned evidence archive. The public repository is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit and the frozen release is https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.1. A permanent archive DOI has not yet been assigned.
 
 Thank you for your consideration.
 
