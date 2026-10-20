@@ -129,7 +129,7 @@ On the fixed RAHGL-MDR ordinary drug-cold folds, an entity-balanced prior-residu
 
 ## Data and code availability
 
-The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.0. A permanent archive DOI has not yet been assigned.
+The public evidence package contains frozen summaries/configurations, the main table and figures, rebuilding scripts, tests, a third-party boundary, and a SHA-256 manifest. Third-party raw data, repository code, model weights, and paper PDFs are not redistributed. Repository: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit; versioned release: https://github.com/ljhOfGithub/ncrna-drug-generalization-audit/releases/tag/v0.1.1. A permanent archive DOI has not yet been assigned.
 
 ## Ethics statement
 

@@ -1,6 +1,6 @@
 # Pattern Recognition Cover Letter 简体中文源稿
 
-> 状态：事实和结构源稿；作者、单位、稿件编号、编辑姓名、公开 URL 和英文措辞均待终排。
+> 状态：事实和结构源稿；作者、单位、公开 URL 已记录，稿件编号与编辑姓名待投稿系统生成/指定，英文措辞仍需作者终审。
 
 尊敬的编辑：
 
@@ -24,12 +24,11 @@
 边界，提供共同终点、公开方法严格适配、不确定性估计和可复核证据包。稿件不会把未知关联
 称为真实阴性，也不会把独立适配写成作者原模型复现。
 
-本稿件未一稿多投，所有作者均同意投稿，利益冲突和基金信息如下：TBD。数据与代码的最终
-公开 URL：`https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；冻结版本：`v0.1.0`。独立代码采用 MIT，原创文稿/图采用 CC BY 4.0；尚未分配永久归档 DOI。
+[作者确认必需：本稿为原创、未在其他期刊审理，且作者同意投稿。] 利益冲突与基金信息仍待作者本人确认。数据与代码的公开 URL：`https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`；冻结版本：`v0.1.1`。独立代码采用 MIT，原创文稿/图采用 CC BY 4.0；尚未分配永久归档 DOI。
 
 感谢审阅。
 
 此致  
-通讯作者：TBD  
-单位：TBD  
-电子邮箱：TBD
+通讯作者：Jihao Li
+单位：Independent Researcher, Shenzhen, Guangdong, China
+电子邮箱：jihao.li@polyu.edu.hk
