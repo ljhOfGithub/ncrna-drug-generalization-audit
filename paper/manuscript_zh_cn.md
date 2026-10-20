@@ -125,7 +125,7 @@ RNA 频率先验反映训练数据中的报道结构，而不是生物学机制�
 
 ## 数据与代码可用性
 
-公开证据包提供冻结 summary/config、主表、图、重建脚本、测试、第三方边界和 SHA-256 清单。第三方原始数据、仓库代码、模型权重和论文 PDF 不随包重新分发。公开仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`，冻结版本为 `v0.1.1`。尚未分配永久归档 DOI，不把 GitHub 标签冒充 DOI。
+公开证据包提供冻结 summary/config、主表、图、重建脚本、测试、第三方边界和 SHA-256 清单。第三方原始数据、仓库代码、模型权重和论文 PDF 不随包重新分发。公开仓库为 `https://github.com/ljhOfGithub/ncrna-drug-generalization-audit`，冻结版本为 `v0.1.2`。尚未分配永久归档 DOI，不把 GitHub 标签冒充 DOI。
 
 ## 伦理声明
 
@@ -137,11 +137,11 @@ Jihao Li：Conceptualization、Methodology、Software、Validation、Formal anal
 
 ## 利益冲突
 
-TBD，由全体作者确认。
+作者声明不存在利益冲突。
 
 ## 基金
 
-TBD；没有信息时不得填写虚构项目。
+本研究未获得公共、商业或非营利资助机构的专项基金资助。
 
 ## 生成式 AI 使用说明
 

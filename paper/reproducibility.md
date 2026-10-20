@@ -4,7 +4,7 @@
 
 - Working branch: `feat/generalization-audit`.
 - Git base commit at audit time: `f1358d53299bb33ccb3b23bb5d7f9e61195f2caa`.
-- Status: **not release-ready**. Most audit scripts, tests, results, and paper artifacts are untracked; `main.py`, `train_eval.py`, and `util_functions.py` also contain pre-existing tracked modifications. No commit, push, or merge has been performed in this work session.
+- Status: the research worktree intentionally remains dirty and is not used as release proof. Its pre-existing tracked changes in `main.py`, `train_eval.py`, and `util_functions.py` are excluded from the public package. The rights-clear 93-file package is released separately as `v0.1.2` and verified from a committed clean checkout.
 - Python environment: shared `/Users/jackie/Documents/Git/.venv`; Python 3.11.15.
 - Verified package versions: NumPy 2.4.6, Pandas 2.3.3, scikit-learn 1.8.0, PyTorch 2.12.0, RDKit 2026.9.1, SciPy 1.17.1, Matplotlib 3.11.2.
 - Local evidence-package manifest: `release/manifest.json`; SHA-256 covers the frozen inputs, generated tables/figures, build sources, environment list, data card, third-party boundary, and maintenance plan.
@@ -38,24 +38,22 @@ dataset/protocol and case-study tables. Neither command retrains the paper model
 
 Primary frozen results referenced by the paper are listed row-by-row in `paper/main_results.csv`. The `sources` column is the machine-readable provenance pointer, and `paper_evidence_matrix.py` rejects any row whose reported delta cannot be reconstructed from the candidate and baseline means. The 18 required build inputs include the sChemNET no-sequence and PLMF-MDA strict-adaptation summaries; raw databases, model caches, checkpoints, third-party repository clones, and paper PDFs are excluded.
 
-## Remaining release blockers
+## Remaining reproducibility limitations
 
-- Create a clean release commit without absorbing unrelated tracked modifications; this requires reviewing the existing dirty files first.
-- Obtain permission or isolate the new implementation from the unlicensed upstream repository. The conservative release policy now excludes every third-party raw dataset, repository clone, model weight, cache, and paper PDF; this avoids unauthorized redistribution but does not grant a license to derivative code.
+- The conservative release policy excludes every third-party raw dataset, repository clone, model weight, cache, and paper PDF. This avoids unauthorized redistribution but does not grant a license to upstream or third-party material.
 - Add a single environment lockfile derived from the working shared environment; `requirements-audit.txt` is not yet demonstrated to recreate all experiments from scratch.
-- Re-run the main-table build and figure generation from a clean checkout before release.
 - `runtime_hardware.md` / `.csv` record the current hardware and complete LocalGL per-fold wall-clock values. A clean rerun time for the three-seed RAHGL confirmation remains missing.
 - Archive exact stdout/stderr or run manifests for confirmatory executions; summary files alone do not prove clean end-to-end reruns.
 
 ## Manifest-only clean-package verification
 
-On 2026-10-20, the 92 files declared by `release/manifest.json` were copied into a new directory:
+On 2026-10-20, the 93 files declared by `release/manifest.json` were copied into a new directory:
 
-`/Users/jackie/Documents/research/ncrd-lg-generalization-audit-clean-repro-20261020-v11`
+`/Users/jackie/Documents/research/ncrd-lg-generalization-audit-clean-repro-20261020-v12`
 
-From that directory, the default artifact command rebuilt all 13 main comparisons and the conclusion-reversal figure, passed its 14 portable tests, and passed SHA-256 verification for all 92 declared files. The copied `submission-pattern-recognition/main.tex` also compiled successfully with the built-in LaTeX compiler.
+From that directory, the default artifact command rebuilt all 13 main comparisons and the conclusion-reversal figure, passed its 14 portable tests and 22 package tests, and passed SHA-256 verification for all 93 declared files. The copied `submission-pattern-recognition/main.tex` also compiled successfully with the built-in LaTeX compiler. The same package was committed and checked again from the clean `v0.1.2` checkout.
 
-This demonstrates that the declared evidence package is self-contained for its stated default scope. It is not a committed clean checkout, does not retrain models, and does not resolve licensing or third-party input availability.
+This demonstrates that the declared evidence package is self-contained for its stated default scope. It does not retrain models and does not resolve excluded third-party input availability.
 
 ## Integrity boundary
 

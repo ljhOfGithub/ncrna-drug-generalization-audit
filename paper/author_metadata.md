@@ -1,6 +1,6 @@
 # 作者与声明确认表
 
-> 状态：作者已指定以独立研究者身份投稿；公开资料核实了姓名和邮箱，ORCID 未找到。基金与利益冲突仍须作者本人最终确认。
+> 状态：作者已指定以独立研究者身份投稿；公开资料核实了姓名和邮箱，ORCID 未找到。作者已确认无专项基金、无利益冲突，稿件原创、未一稿多投并同意投稿。
 
 ## 1. 作者顺序与单位
 
@@ -36,21 +36,19 @@
 
 ## 3. 基金
 
-二选一并由作者确认：
+作者确认本研究无专项基金。投稿稿采用：
 
-- 有基金：填写资助机构官方英文名、项目编号及受资助作者。
-- 无专项基金：可采用 “This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.”
+> This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
 
-当前状态：[作者确认]
+当前状态：已确认。
 
 ## 4. 利益冲突
 
-二选一并由全体作者确认：
+作者确认不存在需要披露的利益冲突。投稿稿采用：
 
-- 无利益冲突：可采用 “The authors declare no competing interests.”
-- 有利益冲突：逐项说明财务或非财务关系。
+> The author declares no competing interests.
 
-当前状态：[作者确认]
+当前状态：已确认。
 
 ## 5. 伦理与数据合规
 
@@ -60,10 +58,10 @@
 
 ## 6. 致谢与数据责任
 
-- 致谢对象及其同意：[作者填写或无]
-- 数据许可/通知义务最终确认人：[作者填写]
+- 致谢对象及其同意：无。
+- 数据许可/通知义务最终确认人：Jihao Li。
 - 公开仓库维护人：Jihao Li
-- 所有作者已阅读并批准终稿：[作者最终确认]
+- 作者已确认稿件原创、未一稿多投并同意投稿；提交前仍需对排版后的最终 PDF 作最后通读。
 
 ## 7. 生成式 AI 使用披露
 
