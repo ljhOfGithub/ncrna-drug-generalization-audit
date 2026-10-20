@@ -1,0 +1,68 @@
+{
+  "complete": true,
+  "source_paper": "Sheng et al., PLOS Computational Biology 2026, DOI 10.1371/journal.pcbi.1013968",
+  "upstream_commit_evidence_only": "effabcb59f361a07ff5c1bc92158a3e8f7582f52",
+  "rnafm_upstream_commit": "348951516e0963d22bbb33b3c9fc18c89081d38e",
+  "implementation": "independent_scaffold_full_candidate_adapter",
+  "split_seed": 20261019,
+  "training_seeds": [
+    20261020,
+    20261021,
+    20261022
+  ],
+  "folds": 5,
+  "executed_fold_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "partial_run": false,
+  "paper_protocol_complete": true,
+  "paper_protocol_deviations": [],
+  "feature_manifest_sha256": "167e5d45d5d5b969fc38b09f1632f10d4d8cba4fce769a944b425ba11c740212",
+  "feature_manifest_artifact_type": "frozen_language_features",
+  "input_truncation": {
+    "rna_over_24": 34,
+    "drug_over_100_atoms": 14
+  },
+  "evaluation_population": {
+    "all_drugs": 625,
+    "active_drugs_with_at_least_one_known_positive": 606,
+    "zero_positive_drugs_excluded_from_ap": 19,
+    "executed_test_drugs": 606,
+    "estimand": "drug-macro AP over drugs with at least one known positive"
+  },
+  "macro_ap": {
+    "plmf_mda_strict_adapter": 0.13504977304577778,
+    "prior_preserving_pairwise_residual": 0.1617478191695122,
+    "rna_prior_only": 0.1575069849799571
+  },
+  "plmf_vs_prior": {
+    "delta": -0.022457211934179322,
+    "scaffold_bootstrap_95": [
+      -0.027582418669554253,
+      -0.02238942101263536,
+      -0.017726767795979474
+    ]
+  },
+  "strong_candidate_vs_plmf": {
+    "delta": 0.026698046123734415,
+    "scaffold_bootstrap_95": [
+      0.02167892525183431,
+      0.026702645921085573,
+      0.03188416542804051
+    ],
+    "fold_non_decrease_count": 5,
+    "paper_gate_passed": true
+  },
+  "limitations": [
+    "independent strict-protocol adaptation, not author-number reproduction",
+    "frozen language encoders are cached in eval mode",
+    "frozen language CLS are cached; trainable branches use pair mini-batches",
+    "RNA is truncated at 24 nt and drug graphs at 100 atoms",
+    "repeated Mi development means this is baseline coverage, not untouched confirmation"
+  ],
+  "run_config_sha256": "fc07ec826eb1d03246d616723bbad3ae3bbdf64dddfe93ee324cff285df4f4e0"
+}

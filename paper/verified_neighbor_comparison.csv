@@ -1,0 +1,7 @@
+work,year,evidence_tier,random_edge,entity_cold,double_cold,scaffold_disjoint,full_candidate_benchmark,strong_frequency_prior,entity_deoverlap,temporal_external,independent_source,protocol_note
+ncRD-LG,2026,publisher full HTML,yes,no,no,no,no,no,no,no,no,"60/20/20 pair split; one sampled negative per positive; cold and scaffold splits stated as future work"
+RAHGL-MDR,2026,official PDF to EOF plus code,yes,yes,yes,no,yes,yes,no,no,no,"miRNA-cold, drug-cold, double-cold, sampled-unlabeled and full-candidate ranking; degree/popularity baseline"
+HMVCC,2027 (online 2026),publisher full HTML,yes,drug only,no,no,no,no,no,no,no,"edge split, cross-species, cross-dataset transfer, drug cold-start and four negative-sampling protocols"
+MGCNA,2025,publisher full HTML plus supplement,yes,yes,yes,no,no,no,no,no,no,"balanced sampled unknowns; miRNA-cold, drug-cold and double-cold; full-candidate ranking only in case studies"
+PLMF-MDA,2026,publisher full HTML,yes,yes,no,no,no,no,no,no,no,"balanced sampled unknowns; drug/miRNA cold nodes selected from intermediate-frequency ranges; full-candidate ranking only in case studies"
+Conditional Drug-Cold and Scaffold-Separation Study (this study),in progress,local experiments and audited public artifacts,yes,drug and scaffold,no,yes,yes,yes,yes,yes,yes,"unified audit target; source-independent evidence is limited and not prospective biological validation"

@@ -1,0 +1,33 @@
+{
+  "source_runs": [
+    "results/rahgl-objective-alignment-pilot-20261020",
+    "results/rahgl-objective-alignment-pilot-20261020-seed20261021",
+    "results/rahgl-objective-alignment-pilot-20261020-seed20261022"
+  ],
+  "aggregation_unit": "mean seed-specific average precision per fold and drug",
+  "training_seeds": [20261020, 20261021, 20261022],
+  "test_drug_count": 197,
+  "bootstrap_iterations": 20000,
+  "bootstrap_seed": 20261020,
+  "macro_ap": {
+    "entity_balanced_pairwise_residual": 0.18424410029565966,
+    "pairwise_prior_residual": 0.18094019926305244,
+    "prior_offset_listwise_residual": 0.17183801467271345,
+    "rna_prior_only": 0.1706644172507302
+  },
+  "entity_balanced_vs_rna_prior": {
+    "delta": 0.013579683044929462,
+    "bootstrap_95_low": 0.005139147247120056,
+    "bootstrap_median": 0.013197684104033604,
+    "bootstrap_95_high": 0.024170176348123493,
+    "fold_non_decrease_count": 5,
+    "training_seed_map_sample_sd": 0.0018771545912512246
+  },
+  "published_external_references": {
+    "rahgl_popularity_map": 0.1768,
+    "rahgl_full_model_map": 0.1348,
+    "paired_or_rerun_in_this_code": false
+  },
+  "passed_drug_cold_confirmation": true,
+  "paper_ready": false
+}

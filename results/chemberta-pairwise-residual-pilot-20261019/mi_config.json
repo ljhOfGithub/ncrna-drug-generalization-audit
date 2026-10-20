@@ -1,0 +1,51 @@
+{
+  "split_seed": 20261019,
+  "drug_view": "chemberta",
+  "balanced_bootstrap_95": {
+    "low": -0.0017613625560931683,
+    "median": 0.002335985516096817,
+    "high": 0.006103677355932001
+  },
+  "balanced_pooled_aupr_delta": 0.002430189666145055,
+  "full_candidate_macro_ap_delta": 0.0042390482966842,
+  "full_candidate_bootstrap_95": {
+    "low": 0.0028120915862985007,
+    "median": 0.004207482249674333,
+    "high": 0.005899405340732821
+  },
+  "full_candidate_fold_non_decrease_count": 5,
+  "passed_preregistered_gate": false,
+  "balanced_fold_non_decrease_count": 5,
+  "residual_scales_by_fold": [
+    {
+      "fold": 0,
+      "residual_scale": 1.0,
+      "best_epoch": 1,
+      "validation_macro_ap": 0.17022231101064375
+    },
+    {
+      "fold": 1,
+      "residual_scale": 0.05,
+      "best_epoch": 7,
+      "validation_macro_ap": 0.19951523421558243
+    },
+    {
+      "fold": 2,
+      "residual_scale": 0.05,
+      "best_epoch": 2,
+      "validation_macro_ap": 0.13229565216214081
+    },
+    {
+      "fold": 3,
+      "residual_scale": 0.1,
+      "best_epoch": 4,
+      "validation_macro_ap": 0.13703020222589823
+    },
+    {
+      "fold": 4,
+      "residual_scale": 0.25,
+      "best_epoch": 7,
+      "validation_macro_ap": 0.16973131691028462
+    }
+  ]
+}

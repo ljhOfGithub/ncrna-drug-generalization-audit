@@ -1,0 +1,8 @@
+item,hardware,device,scope,observed_wall_seconds,status,paper_use
+full_test_suite,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",CPU,"179 pytest tests",65.15,completed,"reproducibility check; 7 known warnings"
+release_manifest_tests,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",CPU,"3 release-manifest tests",0.06,completed,"manifest validation only"
+localgl_recovery_smoke,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",CPU,"fold 0; 2 epochs; max 600 train pairs; resample_each_epoch",19.8,completed_non_evidential,"runtime smoke only; excluded from paper results"
+localgl_monolithic_attempt,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",MPS,"formal dynamic-resampling run; fold 0 completed in memory and fold 1 entered epoch 2; no result files",4847.51,abnormal_termination,"not a result and not a valid full-run runtime estimate"
+localgl_per_fold_formal,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",MPS,"5 independent 40-epoch folds; resample_each_epoch; per-fold seconds 4716.75/3648.02/2675.91/2627.07/2541.18",16208.93,completed,"all folds verified and aggregated; dynamic-resampling result used in main table"
+plmf_mda_strict_formal,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",CPU,"3 seeds x 5 folds; max 80 epochs; patience 15; pair batch 32",9099,completed_observed_filesystem_interval,"15/15 verified; measured from output-directory birth to complete-summary write, not an internal timer"
+rahgl_three_seed_confirmation,"Apple M1 Max; 10-core CPU; 32-core GPU; 64 GB unified memory",MPS,"3 seeds x 5 folds",,completed_runtime_not_recorded,"result is valid; wall-clock must be measured in a clean reproduction run"

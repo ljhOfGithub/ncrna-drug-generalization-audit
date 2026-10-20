@@ -1,0 +1,57 @@
+{
+  "source_paper": "Galeano et al., Nature Communications 2024, DOI 10.1038/s41467-024-49813-w",
+  "upstream_commit_evidence_only": "66c0c880c3477270a77dad412a05a8415a89d3a7",
+  "implementation": "independent_no_sequence_similarity_ablation",
+  "split_seed": 20261019,
+  "training_seeds": [
+    20261020,
+    20261021,
+    20261022
+  ],
+  "folds": 5,
+  "executed_fold_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "hyperparameters": {
+    "fingerprint": "MACCS_167",
+    "hidden_units": 16,
+    "alpha": 0.286,
+    "dropout": 0.174,
+    "learning_rate": 0.0346,
+    "max_epochs": 120,
+    "patience": 20
+  },
+  "macro_ap": {
+    "prior_preserving_pairwise_residual": 0.1617478191695122,
+    "rna_prior_only": 0.15750698497995302,
+    "schemnet_no_seq_maccs": 0.15450027355873677
+  },
+  "schemnet_vs_prior": {
+    "delta": -0.0030067114212162516,
+    "scaffold_bootstrap_95": [
+      -0.005555613708635604,
+      -0.002980376860762326,
+      -0.00046212840758429055
+    ]
+  },
+  "strong_candidate_vs_schemnet": {
+    "delta": 0.007247545610775424,
+    "scaffold_bootstrap_95": [
+      0.004751441690511016,
+      0.007218705794239827,
+      0.009681269642930326
+    ],
+    "fold_non_decrease_count": 5,
+    "passed": true
+  },
+  "run_full_sequence_followup": false,
+  "limitations": [
+    "no miRNA sequence-similarity weighting",
+    "no external Drug Repurposing Hub unlabeled augmentation",
+    "association ranking does not identify regulatory direction or mechanism"
+  ]
+}

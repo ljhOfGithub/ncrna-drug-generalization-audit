@@ -1,0 +1,37 @@
+{
+  "datasets": [
+    "ncRNADrug_mi_deoverlap"
+  ],
+  "cross_dataset_gate_passed": false,
+  "dataset_results": [
+    {
+      "dataset": "ncRNADrug_mi_deoverlap",
+      "split_protocol": "degree-balanced five-fold drug-cold",
+      "split_seed": 20261019,
+      "folds": 5,
+      "max_epochs": 120,
+      "aligned_rna_count": 11398,
+      "aligned_drug_count": 201,
+      "mapped_positive_count": 1043,
+      "duplicate_positive_rows_removed": 15,
+      "valid_rna_feature_count": 3767,
+      "valid_drug_feature_count": 169,
+      "excluded_rna_count": 1444,
+      "excluded_drug_count": 102,
+      "full_candidate_macro_ap_delta": -0.012728792988773371,
+      "full_candidate_bootstrap_95": {
+        "low": -0.046089278870607917,
+        "median": -0.012494142760433032,
+        "high": 0.017056922090905514
+      },
+      "full_candidate_fold_non_decrease_count": 3,
+      "balanced_pooled_aupr_delta": 0.09718992809446059,
+      "balanced_bootstrap_95": {
+        "low": -0.0025842643881913677,
+        "median": 0.09125175750930692,
+        "high": 0.1650768642568574
+      },
+      "dataset_gate_passed": false
+    }
+  ]
+}

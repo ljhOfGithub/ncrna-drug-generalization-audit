@@ -1,0 +1,27 @@
+{
+  "source_sha256": "2f8a993055552ba4e0ad5f080f8789145d9237c7357e0e94c1b6731dc5a0ee1e",
+  "train_cutoff_year": 2009,
+  "validation_first_year": 2010,
+  "test_first_year_range": [
+    2011,
+    2014
+  ],
+  "test_excludes_all_mi_cids": true,
+  "rna_count": 640,
+  "train_drug_count": 28,
+  "validation_drug_count": 16,
+  "test_drug_count": 18,
+  "valid_structure_count": 62,
+  "test_valid_structure_count": 18,
+  "residual_scale": 0.25,
+  "best_epoch": 19,
+  "validation_macro_ap": 0.20084778141456827,
+  "full_candidate_macro_ap_delta": -0.01987594105545329,
+  "full_candidate_bootstrap_95": {
+    "low": -0.04693706412618227,
+    "median": -0.01859283336405551,
+    "high": 0.002955019465657587
+  },
+  "test_drug_non_decrease_count": 12,
+  "passed_preregistered_gate": false
+}

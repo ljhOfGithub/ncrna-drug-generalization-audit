@@ -1,0 +1,52 @@
+{
+  "source_table_sha256": "22f2657460577b584f748536eea0592a9ae6d63bcabfc402b7d34c61ed1c4710",
+  "split_seed": 20261020,
+  "training_seed": 20261020,
+  "max_epochs": 60,
+  "mapping": {
+    "source_rows": 32969,
+    "mapped_rows": 10829,
+    "mapped_pairs": 9495,
+    "replicated_pairs": 442,
+    "triply_supported_pairs": 51,
+    "later_second_source_pairs": 381,
+    "replicated_drugs": 99
+  },
+  "evaluable_test_drugs": 99,
+  "macro_ap": {
+    "replicated_rna_prior": 0.14618467840500168,
+    "replication_pairwise_residual": 0.15711792394870608,
+    "reported_pairwise_residual": 0.1938139214377369,
+    "reported_rna_prior": 0.19246160504589058
+  },
+  "comparisons": {
+    "replicated_rna_prior": {
+      "delta": 0.010933245543704395,
+      "scaffold_bootstrap_95": [
+        0.0070372283868866325,
+        0.010750721976033543,
+        0.016040523737720826
+      ],
+      "fold_non_decrease_count": 5
+    },
+    "reported_rna_prior": {
+      "delta": -0.0353436810971845,
+      "scaffold_bootstrap_95": [
+        -0.05340548344289549,
+        -0.03486445045162342,
+        -0.019741063861194584
+      ],
+      "fold_non_decrease_count": 0
+    },
+    "reported_pairwise_residual": {
+      "delta": -0.036695997489030824,
+      "scaffold_bootstrap_95": [
+        -0.05328115484158213,
+        -0.036357913457520416,
+        -0.02189497826860523
+      ],
+      "fold_non_decrease_count": 0
+    }
+  },
+  "passed": false
+}

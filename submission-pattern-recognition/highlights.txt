@@ -1,0 +1,5 @@
+Drug-cold AP exceeded an RNA-frequency prior by 0.013580.
+The gain fell to 0.000296 under scaffold-disjoint evaluation.
+A strong RNA-frequency prior changed conclusions against neural baselines.
+Cross-database de-overlap reversed the ncRNADrug gain.
+Drug-cold gains did not establish transfer to unseen scaffolds.
